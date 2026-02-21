@@ -68,3 +68,4 @@ memory/*.sqlite
 # Workspace MEMORY files (may contain secrets)
 workspace-*/MEMORY.md
 workspace/
+workspace-zhiku/SOUL.md
