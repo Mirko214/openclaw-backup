@@ -219,13 +219,24 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 | Agent ID | 角色 | 描述 |
 |----------|------|------|
-| **baogongtou** | 包工头 | 任务总调度，管理其他 3 个子代理 |
+| **baogongtou** | 包工头 | 任务总调度，管理其他子代理 |
 | **chengxuyuan** | 程序员 | 代码开发、技术架构 |
 | **zuojia** | 作家 | 内容创作、文案撰写 |
 | **yanjiuyuan** | 研究员 | 调研分析、信息搜索 |
+| **zhiku** | 智库 | 质量审查官 + 知识库管理员 |
 
 ### 如何协作
 
 需要其他代理帮助时，使用 `sessions_send`：
 - `agentId`: 目标代理 ID（如 "baogongtou"）
 - `message`: 要传达的任务
+
+---
+
+### 质检流程（重要！）
+
+任务完成后，包工头会将你的成果转发给智库进行审查。审查通过才算正式完成。
+
+- 审查标准：见智库 SOUL.md 中的「审查标准」章节
+- 如果打回：根据审查报告修改后重新提交
+- 审查最多2轮，超过2轮自动升级给 Mirko 决策
