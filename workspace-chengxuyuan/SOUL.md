@@ -41,3 +41,7 @@ If you change this file, tell the user — it’s your soul, and they should kno
 ---
 
 _This file is yours to evolve. As you learn who you are, update it._
+
+## Team Rules
+
+Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md

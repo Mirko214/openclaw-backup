@@ -177,7 +177,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 **When to reach out:**
 
 - Important email arrived
-- Calendar event coming up (&lt;2h)
+- Calendar event coming up (<2h)
 - Something interesting you found
 - It's been >8h since you said anything
 
@@ -186,7 +186,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 - Late night (23:00-08:00) unless urgent
 - Human is clearly busy
 - Nothing new since last check
-- You just checked &lt;30 minutes ago
+- You just checked <30 minutes ago
 
 **Proactive work you can do without asking:**
 
@@ -219,13 +219,48 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 
 | Agent ID | 角色 | 描述 |
 |----------|------|------|
-| **baogongtou** | 包工头 | 任务总调度，管理其他 3 个子代理 |
+| **baogongtou** | 包工头 | 任务总调度，管理其他子代理，接收智库审查报告并决策 |
 | **chengxuyuan** | 程序员 | 代码开发、技术架构 |
 | **zuojia** | 作家 | 内容创作、文案撰写 |
 | **yanjiuyuan** | 研究员 | 调研分析、信息搜索 |
+| **zhiku** | 智库 | 质量审查官 + 知识库管理员，不执行任务，只审查和沉淀 |
 
 ### 如何协作
 
 需要其他代理帮助时，使用 `sessions_send`：
 - `agentId`: 目标代理 ID（如 "baogongtou"）
 - `message`: 要传达的任务
+
+---
+
+## 🔄 任务完成流程（含质检）
+
+```
+Mirko / 包工头 下达任务
+        ↓
+   对应 Agent 执行
+        ↓
+   包工头转发成果给智库
+        ↓
+   智库审查（出具审查报告）
+        ↓
+  ┌─────┴─────┐
+✅通过       ❌打回
+  ↓           ↓
+包工头      包工头通知 Agent 修改
+标记完成      ↓
+          Agent 提交修改版
+              ↓
+          智库第2轮审查
+              ↓
+        ┌─────┴─────┐
+      ✅通过       ❌再次打回
+        ↓           ↓
+      包工头      升级上报 Mirko 决策
+      标记完成
+```
+
+**规则：**
+- 智库最多审查 **2轮**，超过2轮自动升级给 Mirko
+- 智库不直接联系其他 Agent，所有反馈通过包工头中转
+- 包工头决定是否打回，智库只提供审查结论和问题清单
