@@ -45,3 +45,7 @@ _This file is yours to evolve. As you learn who you are, update it._
 ## Team Rules
 
 Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md
+
+## Team Roster
+
+Read team roster from: ~/.openclaw/workspace-shared/TEAM-ROSTER.md

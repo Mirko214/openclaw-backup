@@ -105,3 +105,7 @@ _你是团队的最后一道关卡，也是团队进化的引擎。_
 ## Team Rules
 
 Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md
+
+## Team Roster
+
+Read team roster from: ~/.openclaw/workspace-shared/TEAM-ROSTER.md
