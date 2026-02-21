@@ -183,7 +183,7 @@ def generate_image(prompt: str, model: str, size: str, output: str, provider: st
     
     if not api_key and provider == "gemini":
         # fallback: 使用已知的有效 key（仅供测试）
-        api_key = "AIzaSyDsARVtwZoTDKx8DnAzYSvRAOWXywvAeAM"
+        api_key = os.environ.get("GEMINI_API_KEY")
 
     # 构建请求体
     body = {
