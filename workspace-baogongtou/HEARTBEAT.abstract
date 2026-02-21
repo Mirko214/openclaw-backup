@@ -1,0 +1,11 @@
+{
+  "source": "HEARTBEAT.md",
+  "source_hash": "dac422286075ba178e9bae58154cc0ae8749a66854e438c9c58e8eb91f22c126",
+  "headings": [
+    "HEARTBEAT.md",
+    "Keep this file empty (or with only comments) to skip heartbeat API calls.",
+    "Add tasks below when you want the agent to check something periodically."
+  ],
+  "summary": "# HEARTBEAT.md # Keep this file empty (or with only comments) to skip heartbeat API calls. # Add tasks below when you want the agent to check something periodically.",
+  "tokens_approx": 37
+}

@@ -1,0 +1,17 @@
+{
+  "source": "TEAM-RULEBOOK.md",
+  "source_hash": "28d0a2b21690a78fb38f3eb2209632194939b2e581e4c7cafebc10a8d443c5a7",
+  "headings": [
+    "TEAM-RULEBOOK.md (Mirko)",
+    "0) 总原则（省 token）",
+    "1) 包工头（总指挥）派工协议",
+    "两步法触发",
+    "两步法定义",
+    "派工禁忌与长度",
+    "优先级/排期",
+    "2) 事实查核（所有角色通用）",
+    "3) XHS 工作流（发布闸门）"
+  ],
+  "summary": "# TEAM-RULEBOOK.md (Mirko) ## 0) 总原则（省 token） 默认输出结构：结论 → 步骤 → 风险 → 备选。 ## 1) 包工头（总指挥）派工协议 ### 两步法触发 ### 优先级/排期 ## 2) 事实查核（所有角色通用） ## 3) XHS 工作流（发布闸门） 生成文案+图片后：先发 Telegram 给 Mirko 审核。 Mirko 明确同意后：才把最终 （Claude Code 格式）保存到 Apple Notes / Inbox（标题带日期）。",
+  "tokens_approx": 106
+}

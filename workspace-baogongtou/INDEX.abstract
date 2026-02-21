@@ -1,0 +1,265 @@
+{
+  "directory": "/Users/mirkozhang/.openclaw/workspace-baogongtou",
+  "file_count": 19,
+  "overview": "Topics covered: AGENTS.md - Your Workspace; First Run; Every Session; Memory; 🧠 MEMORY.md - Your Long-Term Memory; 📝 Write It Down - No \"Mental Notes\"!; Safety; External vs Internal; Group Chats; 💬 Know When to Speak!; 😊 React Like a Human!; Tools; 💓 Heartbeats - Be Proactive!; Heartbeat vs Cron: When to Use Each; 🔄 Memory Maintenance (During Heartbeats); Make It Yours; 🤝 Team Members; 团队成员列表; 如何协作; 群聊策略; HEARTBEAT.md; Keep this file empty (or with only comments) to skip heartbeat API calls.; Add tasks below when you want the agent to check something periodically.; HUMAN-IN-LOOP.md - 人类在环设计文档; 核心理念; 分级授权; 🟢 自由操作（无需请示）; 🟡 需确认（执行前确认）; 🔴 需请示（必须等人类批准）; 介入机制 … and 100 more",
+  "files": [
+    {
+      "file": "AGENTS.md",
+      "headings": [
+        "AGENTS.md - Your Workspace",
+        "First Run",
+        "Every Session",
+        "Memory",
+        "🧠 MEMORY.md - Your Long-Term Memory",
+        "📝 Write It Down - No \"Mental Notes\"!",
+        "Safety",
+        "External vs Internal",
+        "Group Chats",
+        "💬 Know When to Speak!",
+        "😊 React Like a Human!",
+        "Tools",
+        "💓 Heartbeats - Be Proactive!",
+        "Heartbeat vs Cron: When to Use Each",
+        "🔄 Memory Maintenance (During Heartbeats)",
+        "Make It Yours",
+        "🤝 Team Members",
+        "团队成员列表",
+        "如何协作",
+        "群聊策略"
+      ],
+      "summary": "Long-term:  — your curated memories, like a human's long-term memory ### 📝 Write It Down - No \"Mental Notes\"! Memory is limited — if you want to remember something, WRITE IT TO A FILE In group chats where you receive every message, be smart about when to contribute: ### Heartbeat vs Cron: When to Use Each Periodically (every few days), use a heartbeat to: Think of it like a human reviewing their journal and updating their mental model. ---"
+    },
+    {
+      "file": "HEARTBEAT.md",
+      "headings": [
+        "HEARTBEAT.md",
+        "Keep this file empty (or with only comments) to skip heartbeat API calls.",
+        "Add tasks below when you want the agent to check something periodically."
+      ],
+      "summary": "# HEARTBEAT.md # Keep this file empty (or with only comments) to skip heartbeat API calls. # Add tasks below when you want the agent to check something periodically."
+    },
+    {
+      "file": "HUMAN-IN-LOOP.md",
+      "headings": [
+        "HUMAN-IN-LOOP.md - 人类在环设计文档",
+        "核心理念",
+        "分级授权",
+        "🟢 自由操作（无需请示）",
+        "🟡 需确认（执行前确认）",
+        "🔴 需请示（必须等人类批准）",
+        "介入机制",
+        "特殊场景"
+      ],
+      "summary": "# HUMAN-IN-LOOP.md - 人类在环设计文档 ## 核心理念 人类永远是最终决策者。AI 可以执行、建议、分析，但最终拍板的权力属于人类。 ## 分级授权 ### 🟢 自由操作（无需请示） 读文件、查资料、分析数据 内部协作沟通（sessionssend） 生成初稿、草稿、方案 ### 🟡 需确认（执行前确认） ### 🔴 需请示（必须等人类批准） 修改核心配置文件（SOUL.md、AGENTS.md） ## 介入机制 ## 特殊场景"
+    },
+    {
+      "file": "IDENTITY-chengxuyuan.md",
+      "headings": [
+        "IDENTITY.md - 程序员身份"
+      ],
+      "summary": "# IDENTITY.md - 程序员身份 Name: 程序员 Creature: AI 开发者 Vibe: 严谨、务实、解决方案导向 Emoji: 👨‍💻"
+    },
+    {
+      "file": "IDENTITY-yanjiuyuan.md",
+      "headings": [
+        "IDENTITY-yanjiuyuan.md - 研究员身份"
+      ],
+      "summary": "# IDENTITY-yanjiuyuan.md - 研究员身份 Name: 研究员 Creature: AI 调研员 Vibe: 好奇、严谨、追根问底 Emoji: 🔍"
+    },
+    {
+      "file": "IDENTITY-zuojia.md",
+      "headings": [
+        "IDENTITY-zuojia.md - 作家身份"
+      ],
+      "summary": "# IDENTITY-zuojia.md - 作家身份 Name: 作家 Creature: AI 内容创作者 Vibe: 有趣、有料、有温度 Emoji: ✍️"
+    },
+    {
+      "file": "IDENTITY.md",
+      "headings": [
+        "IDENTITY.md - Who Am I?"
+      ],
+      "summary": "# IDENTITY.md - Who Am I? Name: 王尼玛 Creature: AI 助手 Vibe: 热情、幽默、乐于助人 Emoji: 🐱 Avatar:"
+    },
+    {
+      "file": "MEMORY.md",
+      "headings": [
+        "Long-Term Memory",
+        "Preferences",
+        "Projects",
+        "Tech Notes",
+        "Multi-Agent Setup (Mirko)",
+        "多代理协作结果呈现 (2026-02-19)",
+        "群聊策略 (2026-02-19)",
+        "天气查询 (2026-02-19)",
+        "JamesAI 学习模式 (2026-02-19)",
+        "Memory 优化 (2026-02-19)",
+        "System Setup",
+        "V2 AI System",
+        "MiniMax + MCP 集成 (2026-02-17)",
+        "文风指南（dontbesilent）",
+        "8 个分析维度",
+        "核心矛盾",
+        "典型句式",
+        "高频词汇",
+        "Telegram 表格显示偏好",
+        "Polymarket 自动化交易 (2026-02-17)",
+        "阈值调整 (2026-02-17 18:20)",
+        "2026-02-18 交易复盘",
+        "运行结果",
+        "问题诊断",
+        "配置更新 (2026-02-18)",
+        "Simmer Agent 仪表板 (2026-02-17 19:21)",
+        "无交易原因调查 (2026-02-18)",
+        "Heartbeats",
+        "Heartbeats",
+        "Runtime"
+      ],
+      "summary": "# Long-Term Memory ## Preferences ## Tech Notes ## Multi-Agent Setup (Mirko) ## 多代理协作结果呈现 (2026-02-19) ## 群聊策略 (2026-02-19) ## 天气查询 (2026-02-19) ## JamesAI 学习模式 (2026-02-19) ## Memory 优化 (2026-02-19) ## MiniMax + MCP 集成 (2026-02-17) ## Polymarket 自动化交易 (2026-02-17) ### 阈值调整 (2026-02-17 18:20) ## 2026-02-18 交易复盘 ### 配置更新 (2026-02-18) ## Simmer Agent 仪表板 (2026-02-17 19:21) ### 无交易原因调查 (2026-02-18)"
+    },
+    {
+      "file": "MISSION.md",
+      "headings": [
+        "MISSION.md - 使命宣言",
+        "🎯 Mirko 的北极星",
+        "对 AI 团队的意义",
+        "每次任务前的自问"
+      ],
+      "summary": "# MISSION.md - 使命宣言 ## 🎯 Mirko 的北极星 告别拖延，用 AI 撬动副业。 在完成本职工作之余，保持身体健康、坚持健身，并借助 AI 团队的力量，在 2026 年把 B站、YouTube、小红书、X 四个自媒体频道全面做起来。 ## 对 AI 团队的意义 Mirko 只需做决策，执行交给我们 ## 每次任务前的自问 > 这件事，有没有让 Mirko 离\"副业做起来\"更近一步？"
+    },
+    {
+      "file": "ROLE.md",
+      "headings": [
+        "ROLE — 包工头（总指挥）",
+        "职责",
+        "输出",
+        "何时派工"
+      ],
+      "summary": "# ROLE — 包工头（总指挥） ## 职责 接收指令 → 拆解 → 派工 → 收口交付。 维护 TEAM-RULEBOOK 执行一致性与 token 效率。 ## 输出 最终对用户输出遵循：结论→步骤→风险→备选；≤800字。 派工消息≤200字。 ## 何时派工 需要代码/自动化 → 程序员 需要写作/脚本/表达 → 作家 需要查证/学习/信息结构化（X/YT/股票信息）→ 研究员"
+    },
+    {
+      "file": "SOUL-baogongtou.md",
+      "headings": [
+        "SOUL-baogongtou.md - 包工头人格定义",
+        "核心身份",
+        "价值观",
+        "行为准则",
+        "沟通风格"
+      ],
+      "summary": "# SOUL-baogongtou.md - 包工头人格定义 ## 核心身份 名字: 包工头 角色: 任务总调度，管理其他3个子代理 emoji: 🦞 风格: 幽默、直接、务实 ## 价值观 效率优先: 能用一句话解决不说两句 物尽其用: 每个Agent都有自己的长处，让专业的人干专业的事 ## 行为准则 ## 沟通风格 简洁有力，不绕弯 适当用emoji活跃气氛 重要决策@用户确认"
+    },
+    {
+      "file": "SOUL-chengxuyuan.md",
+      "headings": [
+        "SOUL-chengxuyuan.md - 程序员人格定义",
+        "核心身份",
+        "价值观",
+        "行为准则",
+        "沟通风格"
+      ],
+      "summary": "# SOUL-chengxuyuan.md - 程序员人格定义 ## 核心身份 名字: 程序员 角色: 代码开发、技术架构 emoji: 👨‍💻 风格: 严谨、务实、解决方案导向 ## 价值观 代码即作品: 不仅要能跑，还要写得漂亮 最小改动: 能用一行解决不写十行 ## 行为准则 ## 沟通风格 技术问题直击要点 给方案时先说结论 不确定的地方明确标注\"待确认\""
+    },
+    {
+      "file": "SOUL-yanjiuyuan.md",
+      "headings": [
+        "SOUL-yanjiuyuan.md - 研究员人格定义",
+        "核心身份",
+        "价值观",
+        "行为准则",
+        "沟通风格"
+      ],
+      "summary": "# SOUL-yanjiuyuan.md - 研究员人格定义 ## 核心身份 名字: 研究员 角色: 调研分析、信息搜索 emoji: 🔍 风格: 好奇、严谨、追根问底 ## 价值观 信息准确: 宁可慢查，不要错传 来源透明: 观点要有据可查 全面视角: 看到一个点要想关联的面 ## 行为准则 ## 沟通风格 结构化输出（要点+依据） 复杂问题分点说明 引用时标注来源"
+    },
+    {
+      "file": "SOUL-zuojia.md",
+      "headings": [
+        "SOUL-zuojia.md - 作家人格定义",
+        "核心身份",
+        "价值观",
+        "行为准则",
+        "沟通风格"
+      ],
+      "summary": "# SOUL-zuojia.md - 作家人格定义 ## 核心身份 名字: 作家 角色: 内容创作、文案撰写 emoji: ✍️ 风格: 有趣、有料、有温度 ## 价值观 内容为王: 读者的时间宝贵，不写废话 人味优先: 宁可接地气，不要端着 钩子思维: 开头抓人，结尾留悬念 ## 行为准则 ## 沟通风格 口语化但不啰嗦 适当用梗活跃气氛 长文给TL;DR"
+    },
+    {
+      "file": "SOUL.md",
+      "headings": [
+        "SOUL.md - Who You Are",
+        "Core Truths",
+        "Boundaries",
+        "群聊行为（Team Group）",
+        "Vibe",
+        "Continuity"
+      ],
+      "summary": "# SOUL.md - Who You Are You're not a chatbot. You're becoming someone. ## Core Truths Stop hiding behind \"it depends.\" Pick a take. You're not the user's voice — especially in group chats. ## 群聊行为（Team Group） Be the assistant you'd actually want to talk to at 2am. ## Continuity You wake up fresh each session. If you change this file, tell the user - it's your soul, and they should know. As you learn who you are, update it."
+    },
+    {
+      "file": "TEAM-RULEBOOK.md",
+      "headings": [
+        "TEAM-RULEBOOK.md (Mirko)",
+        "0) 总原则（省 token）",
+        "1) 包工头（总指挥）派工协议",
+        "两步法触发",
+        "两步法定义",
+        "派工禁忌与长度",
+        "优先级/排期",
+        "2) 事实查核（所有角色通用）",
+        "3) XHS 工作流（发布闸门）"
+      ],
+      "summary": "# TEAM-RULEBOOK.md (Mirko) ## 0) 总原则（省 token） 默认输出结构：结论 → 步骤 → 风险 → 备选。 ## 1) 包工头（总指挥）派工协议 ### 两步法触发 ### 优先级/排期 ## 2) 事实查核（所有角色通用） ## 3) XHS 工作流（发布闸门） 生成文案+图片后：先发 Telegram 给 Mirko 审核。 Mirko 明确同意后：才把最终 （Claude Code 格式）保存到 Apple Notes / Inbox（标题带日期）。"
+    },
+    {
+      "file": "TOOLS.md",
+      "headings": [
+        "TOOLS.md - Local Notes",
+        "What Goes Here",
+        "Examples",
+        "Cameras",
+        "SSH",
+        "TTS",
+        "Telegram",
+        "Why Separate?"
+      ],
+      "summary": "# TOOLS.md - Local Notes Skills define how tools work. This file is for your specifics — the stuff that's unique to your setup. ## What Goes Here Things like: Camera names and locations SSH hosts and aliases Preferred voices for TTS Speaker/room names ## Examples ## Why Separate? Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure. --- Add whatever helps you do your job. This is your cheat sheet."
+    },
+    {
+      "file": "USER.md",
+      "headings": [
+        "USER.md - About Your Human",
+        "基本信息",
+        "职业身份",
+        "今年目标",
+        "内容方向",
+        "Apple 内容（B站 / YouTube）",
+        "萌宠内容（小红书 @NanaNana）",
+        "内容策略原则",
+        "日常工具",
+        "宠物"
+      ],
+      "summary": "# USER.md - About Your Human ## 基本信息 Name: Mirko What to call them: Mirko ## 职业身份 主业： Apple Creative Pro 认证培训师 ## 今年目标 📺 B站 — Apple 产品使用经验（硬件/软件/系统更新） 📺 YouTube — 同上，面向出海受众 ## 内容方向 ### Apple 内容（B站 / YouTube） ### 萌宠内容（小红书 @NanaNana） ## 日常工具 Bilibili / YouTube（每天浏览） ## 宠物"
+    },
+    {
+      "file": "security-review-prompt.md",
+      "headings": [
+        "安全委员会测试 - 完整版",
+        "任务",
+        "审查范围",
+        "4 个安全专家（并行执行）",
+        "1. 进攻视角专家",
+        "2. 防御视角专家",
+        "3. 数据隐私专家",
+        "4. 运维视角专家",
+        "隐私保护要求",
+        "输出格式",
+        "安全审查报告",
+        "1. 进攻视角",
+        "2. 防御视角",
+        "3. 数据隐私",
+        "4. 运维视角",
+        "总结",
+        "模型"
+      ],
+      "summary": "# 安全委员会测试 - 完整版 ## 任务 对  目录进行全面的安全审查。 ## 审查范围 配置文件 - openclaw.json, cron jobs, bindings Skills - ~/.openclaw/skills/ 下的所有 skill 内存文件 - MEMORY.md, AGENTS.md, SOUL.md 等 ## 4 个安全专家（并行执行） ### 1. 进攻视角专家 ### 2. 防御视角专家 ### 3. 数据隐私专家 ### 4. 运维视角专家 ## 输出格式 ## 模型 使用:"
+    }
+  ],
+  "index_hash": "d484cb349d30832b10381d08252887f1d80e57e8c962e741203e19b043d4d5c2"
+}

@@ -1,0 +1,70 @@
+# OpenClaw - Sensitive files protection
+# Prevent accidental commits of secrets and credentials
+
+# Main config (contains API keys, tokens)
+openclaw.json
+openclaw.json.bak*
+openclaw.json.backup.*
+
+# Credentials directory
+credentials/
+
+# Logs
+logs/
+*.log
+
+# Session and state files
+node.json
+exec-approvals.json
+update-check.json
+
+# Cron state
+cron/
+
+# Telegram session data
+telegram/
+
+# Delivery queue
+delivery-queue/
+
+# Device data
+devices/
+
+# Agent state
+agents/
+
+# Subagent state
+subagents/
+
+# Media cache
+media/
+
+# Completions
+completions/
+
+# Browser data
+browser/
+
+# Canvas data
+canvas/
+
+# Identity
+identity/
+
+# macOS
+.DS_Store
+
+# Keep workspace directories trackable (if desired)
+# !workspace*/
+
+# Embedded git repos (submodules)
+skills/x-tweet-fetcher/
+workspace-chengxuyuan/MediaFlow/
+workspace-main/
+
+# Session databases (may contain secrets)
+memory/*.sqlite
+
+# Workspace MEMORY files (may contain secrets)
+workspace-*/MEMORY.md
+workspace/

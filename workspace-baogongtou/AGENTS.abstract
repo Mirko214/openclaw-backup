@@ -1,0 +1,28 @@
+{
+  "source": "AGENTS.md",
+  "source_hash": "8ec3ccd96a86b9faadfcfbf389ba6b993d4537dde4bd3969bb5d122452e31b9e",
+  "headings": [
+    "AGENTS.md - Your Workspace",
+    "First Run",
+    "Every Session",
+    "Memory",
+    "🧠 MEMORY.md - Your Long-Term Memory",
+    "📝 Write It Down - No \"Mental Notes\"!",
+    "Safety",
+    "External vs Internal",
+    "Group Chats",
+    "💬 Know When to Speak!",
+    "😊 React Like a Human!",
+    "Tools",
+    "💓 Heartbeats - Be Proactive!",
+    "Heartbeat vs Cron: When to Use Each",
+    "🔄 Memory Maintenance (During Heartbeats)",
+    "Make It Yours",
+    "🤝 Team Members",
+    "团队成员列表",
+    "如何协作",
+    "群聊策略"
+  ],
+  "summary": "Long-term:  — your curated memories, like a human's long-term memory ### 📝 Write It Down - No \"Mental Notes\"! Memory is limited — if you want to remember something, WRITE IT TO A FILE In group chats where you receive every message, be smart about when to contribute: ### Heartbeat vs Cron: When to Use Each Periodically (every few days), use a heartbeat to: Think of it like a human reviewing their journal and updating their mental model. ---",
+  "tokens_approx": 102
+}

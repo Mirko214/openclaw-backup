@@ -1,0 +1,16 @@
+{
+  "source": "TOOLS.md",
+  "source_hash": "ebff03a93e8b3be81792105db93a4b83d90fd2147da8183cc99d5c905c2a474c",
+  "headings": [
+    "TOOLS.md - Local Notes",
+    "What Goes Here",
+    "Examples",
+    "Cameras",
+    "SSH",
+    "TTS",
+    "Telegram",
+    "Why Separate?"
+  ],
+  "summary": "# TOOLS.md - Local Notes Skills define how tools work. This file is for your specifics — the stuff that's unique to your setup. ## What Goes Here Things like: Camera names and locations SSH hosts and aliases Preferred voices for TTS Speaker/room names ## Examples ## Why Separate? Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure. --- Add whatever helps you do your job. This is your cheat sheet.",
+  "tokens_approx": 105
+}
