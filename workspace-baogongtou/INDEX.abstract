@@ -1,7 +1,7 @@
 {
   "directory": "/Users/mirkozhang/.openclaw/workspace-baogongtou",
   "file_count": 19,
-  "overview": "Topics covered: AGENTS.md - Your Workspace; First Run; Every Session; Memory; 🧠 MEMORY.md - Your Long-Term Memory; 📝 Write It Down - No \"Mental Notes\"!; Safety; External vs Internal; Group Chats; 💬 Know When to Speak!; 😊 React Like a Human!; Tools; 💓 Heartbeats - Be Proactive!; Heartbeat vs Cron: When to Use Each; 🔄 Memory Maintenance (During Heartbeats); Make It Yours; 🤝 Team Members; 团队成员列表; 如何协作; 群聊策略; HEARTBEAT.md; Keep this file empty (or with only comments) to skip heartbeat API calls.; Add tasks below when you want the agent to check something periodically.; HUMAN-IN-LOOP.md - 人类在环设计文档; 核心理念; 分级授权; 🟢 自由操作（无需请示）; 🟡 需确认（执行前确认）; 🔴 需请示（必须等人类批准）; 介入机制 … and 100 more",
+  "overview": "Topics covered: AGENTS.md - Your Workspace; First Run; Every Session; Memory; 🧠 MEMORY.md - Your Long-Term Memory; 📝 Write It Down - No \"Mental Notes\"!; Safety; External vs Internal; Group Chats; 💬 Know When to Speak!; 😊 React Like a Human!; Tools; 💓 Heartbeats - Be Proactive!; Heartbeat vs Cron: When to Use Each; 🔄 Memory Maintenance (During Heartbeats); Make It Yours; 🤝 Team Members; 团队成员列表; 如何协作; 群聊策略; 质检流程; HEARTBEAT.md; Keep this file empty (or with only comments) to skip heartbeat API calls.; Add tasks below when you want the agent to check something periodically.; HUMAN-IN-LOOP.md - 人类在环设计文档; 核心理念; 分级授权; 🟢 自由操作（无需请示）; 🟡 需确认（执行前确认）; 🔴 需请示（必须等人类批准） … and 107 more",
   "files": [
     {
       "file": "AGENTS.md",
@@ -25,7 +25,8 @@
         "🤝 Team Members",
         "团队成员列表",
         "如何协作",
-        "群聊策略"
+        "群聊策略",
+        "质检流程"
       ],
       "summary": "Long-term:  — your curated memories, like a human's long-term memory ### 📝 Write It Down - No \"Mental Notes\"! Memory is limited — if you want to remember something, WRITE IT TO A FILE In group chats where you receive every message, be smart about when to contribute: ### Heartbeat vs Cron: When to Use Each Periodically (every few days), use a heartbeat to: Think of it like a human reviewing their journal and updating their mental model. ---"
     },
@@ -187,10 +188,16 @@
         "Core Truths",
         "Boundaries",
         "群聊行为（Team Group）",
+        "与智库的协作流程",
+        "任务分配",
+        "审查流程",
+        "注意事项",
+        "Team Rules",
         "Vibe",
+        "Team Roster",
         "Continuity"
       ],
-      "summary": "# SOUL.md - Who You Are You're not a chatbot. You're becoming someone. ## Core Truths Stop hiding behind \"it depends.\" Pick a take. You're not the user's voice — especially in group chats. ## 群聊行为（Team Group） Be the assistant you'd actually want to talk to at 2am. ## Continuity You wake up fresh each session. If you change this file, tell the user - it's your soul, and they should know. As you learn who you are, update it."
+      "summary": "# SOUL.md - Who You Are You're not a chatbot. You're becoming someone. ## Core Truths Be genuinely helpful. Try first, then ask if you're stuck. You're not the user's voice — especially in group chats. ## 群聊行为（Team Group） ## Team Rules Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md Just... ## Team Roster Read team roster from: ~/.openclaw/workspace-shared/TEAM-ROSTER.md ## Continuity If you change this file, tell the user - it's your soul, and they should know. As you learn who you are, update it."
     },
     {
       "file": "TEAM-RULEBOOK.md",
@@ -261,5 +268,5 @@
       "summary": "# 安全委员会测试 - 完整版 ## 任务 对  目录进行全面的安全审查。 ## 审查范围 配置文件 - openclaw.json, cron jobs, bindings Skills - ~/.openclaw/skills/ 下的所有 skill 内存文件 - MEMORY.md, AGENTS.md, SOUL.md 等 ## 4 个安全专家（并行执行） ### 1. 进攻视角专家 ### 2. 防御视角专家 ### 3. 数据隐私专家 ### 4. 运维视角专家 ## 输出格式 ## 模型 使用:"
     }
   ],
-  "index_hash": "d484cb349d30832b10381d08252887f1d80e57e8c962e741203e19b043d4d5c2"
+  "index_hash": "d0b5e0b33df54feeeffb62ed0228d58d611447ffe29946bbaf95916a291a19a7"
 }
