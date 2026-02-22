@@ -1,0 +1,30 @@
+{
+  "source": "draft-workflow-solution.md",
+  "source_hash": "0c9b253e271aa4b57615edb9169d7d23b10e856337ca9f82815d76e3b5375446",
+  "headings": [
+    "工作流自动化方案",
+    "问题分析",
+    "根因",
+    "解决方案",
+    "核心思路：使用 Hook 监听消息事件",
+    "方案一：Message Hook + Webhook 触发（推荐）",
+    "原理",
+    "实现步骤",
+    "Step 1: 创建 Workflow Hook",
+    "Workflow Trigger Hook",
+    "Step 2: 启用 Hook",
+    "需要先放在 ~/.openclaw/hooks/workflow-trigger/",
+    "Step 3: 配置 Webhook Endpoint",
+    "Step 4: 定义工作流状态文件",
+    "方案二：协议约定 + Cron 定时检查（备选）",
+    "原理",
+    "实现",
+    "每分钟检查一次工作流状态",
+    "方案对比",
+    "实施计划",
+    "注意事项",
+    "参考文档"
+  ],
+  "summary": "# 工作流自动化方案 ### 核心思路：使用 Hook 监听消息事件 ## 方案一：Message Hook + Webhook 触发（推荐） #### Step 1: 创建 Workflow Hook HOOK.md: #### Step 2: 启用 Hook #### Step 3: 配置 Webhook Endpoint ## 方案二：协议约定 + Cron 定时检查（备选） | 方案一：Hook + Webhook | 事件驱动，精确响应，无轮询开销，静默执行 | 需要写 TypeScript handler | ---",
+  "tokens_approx": 102
+}

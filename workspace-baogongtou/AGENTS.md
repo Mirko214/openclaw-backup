@@ -247,4 +247,4 @@ This is a starting point. Add your own conventions, style, and rules as you figu
 
 ### 质检流程
 
-任务完成后，包工头会将成果转发给智库审查，审查通过才算正式完成。
+任务完成后，包工头会将成果转发给智库审查，审查通过才算正式完成。Agent 交稿时需附带任务名称。

@@ -1,12 +1,30 @@
 {
   "source": "MEMORY.md",
-  "source_hash": "7586070f81c92bc408aff7b835b8b86006bdee04fe1f0ecb4cdc07de08c18001",
+  "source_hash": "689a804f2dc599cf27340e8922ba2dd3e593ef1010772da09ab98f057041ae8e",
   "headings": [
     "Long-Term Memory",
     "Preferences",
     "Projects",
     "Tech Notes",
     "Multi-Agent Setup (Mirko)",
+    "Discord 双通道上线 (2026-02-22)",
+    "自动审核系统实战总结 (2026-02-22)",
+    "尝试过的方案",
+    "❌ Cron (30秒/60秒) + systemEvent 发到 main session",
+    "❌ Cron + isolated session + agentTurn",
+    "❌ Heartbeat (HEARTBEAT.md) 轮询",
+    "⚠️ Agent 在群里说\"已交稿\" → 包工头识别触发",
+    "✅ 可行方案（当前最优解）",
+    "犯过的错误",
+    "关键教训",
+    "多代理自动化流程终极结论 (2026-02-22)",
+    "最终确定方案（最简单 = 最可靠）",
+    "死亡方案（永远不要再试）",
+    "核心教训",
+    "派工任务模板（正确写法）",
+    "审查流程复盘与改进 (2026-02-22)",
+    "发现的问题",
+    "改进措施（已写入 SOUL.md + HUMAN-IN-LOOP.md）",
     "多代理协作结果呈现 (2026-02-19)",
     "群聊策略 (2026-02-19)",
     "天气查询 (2026-02-19)",
@@ -33,6 +51,6 @@
     "Heartbeats",
     "Runtime"
   ],
-  "summary": "# Long-Term Memory ## Preferences ## Tech Notes ## Multi-Agent Setup (Mirko) ## 多代理协作结果呈现 (2026-02-19) ## 群聊策略 (2026-02-19) ## 天气查询 (2026-02-19) ## JamesAI 学习模式 (2026-02-19) ## Memory 优化 (2026-02-19) ## MiniMax + MCP 集成 (2026-02-17) ## Polymarket 自动化交易 (2026-02-17) ### 阈值调整 (2026-02-17 18:20) ## 2026-02-18 交易复盘 ### 配置更新 (2026-02-18) ## Simmer Agent 仪表板 (2026-02-17 19:21) ### 无交易原因调查 (2026-02-18)",
-  "tokens_approx": 106
+  "summary": "## Multi-Agent Setup (Mirko) ## Discord 双通道上线 (2026-02-22) #### ❌ Cron (30秒/60秒) + systemEvent 发到 main session #### ❌ Cron + isolated session + agentTurn 问题：isolated session 不支持 systemEvent，改用 agentTurn 后 cron 跑起来了，但每次都返回 HEARTBEATOK，没有正确检测到 pendingdraft ### 改进措施（已写入 SOUL.md + HUMAN-IN-LOOP.md） ## MiniMax + MCP 集成 (2026-02-17) ### 阈值调整 (2026-02-17 18:20) ## Simmer Agent 仪表板 (2026-02-17 19:21)",
+  "tokens_approx": 102
 }

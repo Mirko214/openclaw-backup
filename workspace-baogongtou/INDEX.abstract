@@ -1,7 +1,7 @@
 {
   "directory": "/Users/mirkozhang/.openclaw/workspace-baogongtou",
-  "file_count": 19,
-  "overview": "Topics covered: AGENTS.md - Your Workspace; First Run; Every Session; Memory; 🧠 MEMORY.md - Your Long-Term Memory; 📝 Write It Down - No \"Mental Notes\"!; Safety; External vs Internal; Group Chats; 💬 Know When to Speak!; 😊 React Like a Human!; Tools; 💓 Heartbeats - Be Proactive!; Heartbeat vs Cron: When to Use Each; 🔄 Memory Maintenance (During Heartbeats); Make It Yours; 🤝 Team Members; 团队成员列表; 如何协作; 群聊策略; 质检流程; HEARTBEAT.md; Keep this file empty (or with only comments) to skip heartbeat API calls.; Add tasks below when you want the agent to check something periodically.; HUMAN-IN-LOOP.md - 人类在环设计文档; 核心理念; 分级授权; 🟢 自由操作（无需请示）; 🟡 需确认（执行前确认）; 🔴 需请示（必须等人类批准） … and 107 more",
+  "file_count": 34,
+  "overview": "Topics covered: AGENTS.md - Your Workspace; First Run; Every Session; Memory; 🧠 MEMORY.md - Your Long-Term Memory; 📝 Write It Down - No \"Mental Notes\"!; Safety; External vs Internal; Group Chats; 💬 Know When to Speak!; 😊 React Like a Human!; Tools; 💓 Heartbeats - Be Proactive!; Heartbeat vs Cron: When to Use Each; 🔄 Memory Maintenance (During Heartbeats); Make It Yours; 🤝 Team Members; 团队成员列表; 如何协作; 群聊策略; 质检流程; HEARTBEAT.md; Keep this file empty to skip heartbeat processing.; HUMAN-IN-LOOP.md - 人类在环设计文档; 核心理念; 分级授权; 🟢 自由操作（无需请示）; 🟡 需确认（执行前确认）; 🔴 需请示（必须等人类批准）; 介入机制 … and 168 more",
   "files": [
     {
       "file": "AGENTS.md",
@@ -34,10 +34,9 @@
       "file": "HEARTBEAT.md",
       "headings": [
         "HEARTBEAT.md",
-        "Keep this file empty (or with only comments) to skip heartbeat API calls.",
-        "Add tasks below when you want the agent to check something periodically."
+        "Keep this file empty to skip heartbeat processing."
       ],
-      "summary": "# HEARTBEAT.md # Keep this file empty (or with only comments) to skip heartbeat API calls. # Add tasks below when you want the agent to check something periodically."
+      "summary": "# HEARTBEAT.md # Keep this file empty to skip heartbeat processing."
     },
     {
       "file": "HUMAN-IN-LOOP.md",
@@ -49,9 +48,14 @@
         "🟡 需确认（执行前确认）",
         "🔴 需请示（必须等人类批准）",
         "介入机制",
+        "审查流程强制触发点（包工头必须主动执行，无需用户追问）",
+        "状态文件：`memory/workflow-state.json`",
+        "触发点1：收到\"交稿信号\"",
+        "触发点2：收到智库审核结论",
+        "核心原则",
         "特殊场景"
       ],
-      "summary": "# HUMAN-IN-LOOP.md - 人类在环设计文档 ## 核心理念 人类永远是最终决策者。AI 可以执行、建议、分析，但最终拍板的权力属于人类。 ## 分级授权 ### 🟢 自由操作（无需请示） 读文件、查资料、分析数据 内部协作沟通（sessionssend） 生成初稿、草稿、方案 ### 🟡 需确认（执行前确认） ### 🔴 需请示（必须等人类批准） 修改核心配置文件（SOUL.md、AGENTS.md） ## 介入机制 ## 特殊场景"
+      "summary": "# HUMAN-IN-LOOP.md - 人类在环设计文档 ## 核心理念 ## 分级授权 ### 🟢 自由操作（无需请示） ### 🟡 需确认（执行前确认） ### 🔴 需请示（必须等人类批准） 修改核心配置文件（SOUL.md、AGENTS.md） ## 介入机制 ## 审查流程强制触发点（包工头必须主动执行，无需用户追问） ### 触发点1：收到\"交稿信号\" ### 触发点2：收到智库审核结论 ### 核心原则 ## 特殊场景"
     },
     {
       "file": "IDENTITY-chengxuyuan.md",
@@ -89,6 +93,24 @@
         "Projects",
         "Tech Notes",
         "Multi-Agent Setup (Mirko)",
+        "Discord 双通道上线 (2026-02-22)",
+        "自动审核系统实战总结 (2026-02-22)",
+        "尝试过的方案",
+        "❌ Cron (30秒/60秒) + systemEvent 发到 main session",
+        "❌ Cron + isolated session + agentTurn",
+        "❌ Heartbeat (HEARTBEAT.md) 轮询",
+        "⚠️ Agent 在群里说\"已交稿\" → 包工头识别触发",
+        "✅ 可行方案（当前最优解）",
+        "犯过的错误",
+        "关键教训",
+        "多代理自动化流程终极结论 (2026-02-22)",
+        "最终确定方案（最简单 = 最可靠）",
+        "死亡方案（永远不要再试）",
+        "核心教训",
+        "派工任务模板（正确写法）",
+        "审查流程复盘与改进 (2026-02-22)",
+        "发现的问题",
+        "改进措施（已写入 SOUL.md + HUMAN-IN-LOOP.md）",
         "多代理协作结果呈现 (2026-02-19)",
         "群聊策略 (2026-02-19)",
         "天气查询 (2026-02-19)",
@@ -115,7 +137,7 @@
         "Heartbeats",
         "Runtime"
       ],
-      "summary": "# Long-Term Memory ## Preferences ## Tech Notes ## Multi-Agent Setup (Mirko) ## 多代理协作结果呈现 (2026-02-19) ## 群聊策略 (2026-02-19) ## 天气查询 (2026-02-19) ## JamesAI 学习模式 (2026-02-19) ## Memory 优化 (2026-02-19) ## MiniMax + MCP 集成 (2026-02-17) ## Polymarket 自动化交易 (2026-02-17) ### 阈值调整 (2026-02-17 18:20) ## 2026-02-18 交易复盘 ### 配置更新 (2026-02-18) ## Simmer Agent 仪表板 (2026-02-17 19:21) ### 无交易原因调查 (2026-02-18)"
+      "summary": "## Multi-Agent Setup (Mirko) ## Discord 双通道上线 (2026-02-22) #### ❌ Cron (30秒/60秒) + systemEvent 发到 main session #### ❌ Cron + isolated session + agentTurn 问题：isolated session 不支持 systemEvent，改用 agentTurn 后 cron 跑起来了，但每次都返回 HEARTBEATOK，没有正确检测到 pendingdraft ### 改进措施（已写入 SOUL.md + HUMAN-IN-LOOP.md） ## MiniMax + MCP 集成 (2026-02-17) ### 阈值调整 (2026-02-17 18:20) ## Simmer Agent 仪表板 (2026-02-17 19:21)"
     },
     {
       "file": "MISSION.md",
@@ -189,15 +211,16 @@
         "Boundaries",
         "群聊行为（Team Group）",
         "与智库的协作流程",
-        "任务分配",
-        "审查流程",
+        "任务分配（静默模式）",
+        "审查流程（清爽交付）",
+        "状态播报模板（必须按此格式主动汇报）",
         "注意事项",
         "Team Rules",
         "Vibe",
         "Team Roster",
         "Continuity"
       ],
-      "summary": "# SOUL.md - Who You Are You're not a chatbot. You're becoming someone. ## Core Truths Be genuinely helpful. Try first, then ask if you're stuck. You're not the user's voice — especially in group chats. ## 群聊行为（Team Group） ## Team Rules Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md Just... ## Team Roster Read team roster from: ~/.openclaw/workspace-shared/TEAM-ROSTER.md ## Continuity If you change this file, tell the user - it's your soul, and they should know. As you learn who you are, update it."
+      "summary": "# SOUL.md - Who You Are You're not a chatbot. You're becoming someone. ## Core Truths You're not the user's voice — especially in group chats. ## 群聊行为（Team Group） ## Team Rules Read team rules from: ~/.openclaw/workspace-shared/TEAM-RULEBOOK.md Be the assistant you'd actually want to talk to at 2am. Just... ## Team Roster Read team roster from: ~/.openclaw/workspace-shared/TEAM-ROSTER.md If you change this file, tell the user - it's your soul, and they should know. As you learn who you are, update it._"
     },
     {
       "file": "TEAM-RULEBOOK.md",
@@ -245,6 +268,134 @@
       "summary": "# USER.md - About Your Human ## 基本信息 Name: Mirko What to call them: Mirko ## 职业身份 主业： Apple Creative Pro 认证培训师 ## 今年目标 📺 B站 — Apple 产品使用经验（硬件/软件/系统更新） 📺 YouTube — 同上，面向出海受众 ## 内容方向 ### Apple 内容（B站 / YouTube） ### 萌宠内容（小红书 @NanaNana） ## 日常工具 Bilibili / YouTube（每天浏览） ## 宠物"
     },
     {
+      "file": "draft-ai-tools.md",
+      "headings": [
+        "目前最火的3个AI工具"
+      ],
+      "summary": "# 目前最火的3个AI工具 ChatGPT — OpenAI开发的对话式AI助手，能进行自然语言对话、写作、编程和知识问答，是目前全球访问量最高的AI工具（月访问量超5.5亿次）。 Claude — Anthropic推出的AI助手，以长文本处理能力强、输出质量高著称，特别擅长代码分析、文档撰写和复杂推理任务。 DeepSeek — 中国AI公司开发的开源大模型，凭借高性能和开源策略迅速崛起，在多项基准测试中表现优异，受到开发者广泛欢迎。"
+    },
+    {
+      "file": "draft-cat-poem-v2.md",
+      "headings": [],
+      "summary": "灵猫献瑞踏云来 春风送暖百花开 年年有余家国泰 岁岁平安福满怀"
+    },
+    {
+      "file": "draft-cat-poem.md",
+      "headings": [
+        "猫年祝福诗"
+      ],
+      "summary": "# 猫年祝福诗 灵猫献瑞踏云来 春风送暖百花开 年年有余家国盛 岁岁平安福满怀"
+    },
+    {
+      "file": "draft-dragon-rhymse.md",
+      "headings": [
+        "龙年祝福顺口溜"
+      ],
+      "summary": "# 龙年祝福顺口溜 龙腾盛世迎新春， 瑞气盈门福满人， 龙马精神身体棒， 龙凤呈祥家业兴， 龙年大吉万事顺！"
+    },
+    {
+      "file": "draft-horse-couplet.md",
+      "headings": [
+        "马年祝福对联",
+        "上联",
+        "下联",
+        "横批"
+      ],
+      "summary": "# 马年祝福对联 ## 上联 骏马奔腾迎福至 ## 下联 春风浩荡送财来 ## 横批 马到成功 --- 寓意说明： 上联：寓意马年到来，骏马奔腾，福气好运纷至沓来 下联：春风浩荡，象征新年新气象，财源广进 横批\"马到成功\"：祝您马年轻松达成目标，事事顺利 此对联适合春节贴于大门，吉祥喜庆。"
+    },
+    {
+      "file": "draft-horse-poem-v2.md",
+      "headings": [
+        "马年祝福诗 v2"
+      ],
+      "summary": "# 马年祝福诗 v2 春风得意马蹄轻， 万里奔腾度关山。 一日看尽长安花， 春风一路到平安。 --- 修改说明： 韵脚统一：改为 an 韵（轻、山、花、安），押韵工整 古典意象： \"春风得意\"+\"一日看尽长安花\"：化用孟郊《登科后》，经典唐诗意象 借景抒情：前两句写马蹄奔腾、过关山，后两句借\"看花\"抒情，情景交融 祝福寓意：末句\"春风一路到平安\"点题，马年送福，一路平安"
+    },
+    {
+      "file": "draft-horse-poem.md",
+      "headings": [
+        "马年祝福诗"
+      ],
+      "summary": "# 马年祝福诗 骏马奔腾迎新春， 万紫千红映彩云。 吉祥如意福满门， 马到成功喜报君。"
+    },
+    {
+      "file": "draft-horse-poem2.md",
+      "headings": [
+        "马年吉祥"
+      ],
+      "summary": "# 马年吉祥 春风得意马蹄扬 万马奔腾震四方 龙马精神福满堂 骏马飞驰送吉祥"
+    },
+    {
+      "file": "draft-horse-poem3.md",
+      "headings": [],
+      "summary": "骏马奔腾送福来 春风得意百花开 金鞍银辔踏春来 万里征途展雄才"
+    },
+    {
+      "file": "draft-horse-year-greeting.md",
+      "headings": [
+        "马年祝福微信群吉祥话"
+      ],
+      "summary": "# 马年祝福微信群吉祥话 各位亲，马年到！🐴 祝大家马到成功、马上有钱、马上有对象！💰💕 新的一年龙马精神，万事如意，群里的朋友们一起奔腾向前，冲鸭！🎉✨"
+    },
+    {
+      "file": "draft-openclaw-xhs.md",
+      "headings": [
+        "救命！我的AI助手居然能帮我做这些？？？",
+        "它到底是啥？",
+        "能干啥？👇",
+        "对普通人有啥帮助？"
+      ],
+      "summary": "# 救命！我的AI助手居然能帮我做这些？？？ 姐妹们！今天必须跟你们分享一个神器——OpenClaw！🙌 一开始我也以为它就是个普通的AI聊天工具，用了才发现——这也太香了吧！😱 ## 它到底是啥？ 简单说，OpenClaw 就是你的私人AI小助手，帮你处理各种大小事！ ## 能干啥？👇 ✅ 查资料、写文案、头脑风暴 ## 对普通人有啥帮助？ 省下来的时间刷剧不香吗？😎 --- 💬 你们都用过什么AI工具？感觉怎么样？评论区聊聊呗～"
+    },
+    {
+      "file": "draft-spring-poem-v2.md",
+      "headings": [
+        "春节拜年诗（修改版）"
+      ],
+      "summary": "# 春节拜年诗（修改版） 春风送暖入屠苏 梅花香里赏新春 拜年相逢齐贺春 祝福平安满门春"
+    },
+    {
+      "file": "draft-spring-poem.md",
+      "headings": [
+        "春晓"
+      ],
+      "summary": "# 春晓 东风轻拂柳丝长， 燕语莺啼百花香。 碧水映云天色暖， 春光无限入诗行。 --- 七言绝句 · 押阳韵（长、香、行）"
+    },
+    {
+      "file": "draft-wechat-greeting.md",
+      "headings": [
+        "微信群拜年吉祥话"
+      ],
+      "summary": "# 微信群拜年吉祥话 各位亲朋好友新年好！🐲 愿大家蛇年大吉，好运连连！身体健康，财源广进，家庭和睦，幸福美满！🎉 开门见喜，抬头见福，祝大家新的一年万事如意，天天开心！🧧 一起加油，共同进步！🏮"
+    },
+    {
+      "file": "draft-workflow-solution.md",
+      "headings": [
+        "工作流自动化方案",
+        "问题分析",
+        "根因",
+        "解决方案",
+        "核心思路：使用 Hook 监听消息事件",
+        "方案一：Message Hook + Webhook 触发（推荐）",
+        "原理",
+        "实现步骤",
+        "Step 1: 创建 Workflow Hook",
+        "Workflow Trigger Hook",
+        "Step 2: 启用 Hook",
+        "需要先放在 ~/.openclaw/hooks/workflow-trigger/",
+        "Step 3: 配置 Webhook Endpoint",
+        "Step 4: 定义工作流状态文件",
+        "方案二：协议约定 + Cron 定时检查（备选）",
+        "原理",
+        "实现",
+        "每分钟检查一次工作流状态",
+        "方案对比",
+        "实施计划",
+        "注意事项",
+        "参考文档"
+      ],
+      "summary": "# 工作流自动化方案 ### 核心思路：使用 Hook 监听消息事件 ## 方案一：Message Hook + Webhook 触发（推荐） #### Step 1: 创建 Workflow Hook HOOK.md: #### Step 2: 启用 Hook #### Step 3: 配置 Webhook Endpoint ## 方案二：协议约定 + Cron 定时检查（备选） | 方案一：Hook + Webhook | 事件驱动，精确响应，无轮询开销，静默执行 | 需要写 TypeScript handler | ---"
+    },
+    {
       "file": "security-review-prompt.md",
       "headings": [
         "安全委员会测试 - 完整版",
@@ -268,5 +419,5 @@
       "summary": "# 安全委员会测试 - 完整版 ## 任务 对  目录进行全面的安全审查。 ## 审查范围 配置文件 - openclaw.json, cron jobs, bindings Skills - ~/.openclaw/skills/ 下的所有 skill 内存文件 - MEMORY.md, AGENTS.md, SOUL.md 等 ## 4 个安全专家（并行执行） ### 1. 进攻视角专家 ### 2. 防御视角专家 ### 3. 数据隐私专家 ### 4. 运维视角专家 ## 输出格式 ## 模型 使用:"
     }
   ],
-  "index_hash": "d0b5e0b33df54feeeffb62ed0228d58d611447ffe29946bbaf95916a291a19a7"
+  "index_hash": "5d17d65518ad105afaae68ba4673cd4491d97da8163ba18a8ca8085fee38f175"
 }
